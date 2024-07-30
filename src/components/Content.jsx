@@ -1,5 +1,6 @@
 import React from 'react'
-
+import {EChartComponent} from './Chart';
+import {BarOptions, PieOptions} from '../utils/constant'
 const Content = () => {
     return (
         <div>
@@ -38,8 +39,16 @@ const Content = () => {
 
             </div>
             <div className='content-mid'>
-                <div className='content-mid-first'>chart</div>
-
+                <div className='content-mid-first'>
+                    <p>Invested <img src='/help.png' /></p>
+                    <div style={{padding:"20px"}}>
+                        <EChartComponent options={BarOptions} style={{ height: 230 }}/>
+                    </div>
+                </div>
+                <div className='content-mid-second'>
+                    <p>Excepted Risk Score Distribution</p>
+                        <EChartComponent options={PieOptions} style={{ height: 230, padding:10 }}/>
+                </div>
             </div>
         </div>
     )
