@@ -25,7 +25,7 @@ const SideBar = () => {
             </div>
             <div className='third-container'>
                 <div>
-                    <img src='/frame.png' />
+                    <img src='/Frame.png' />
                 </div>
                 <div className='third-text'>
                     Why Should You Trust It?
