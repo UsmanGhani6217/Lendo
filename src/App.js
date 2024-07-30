@@ -1,9 +1,22 @@
+import "./App.css";
+import SideBar from "./components/SideBar";
+import Header from "./components/Header";
+import Content from "./components/Content";
 
-import React from 'react';
 function App() {
   return (
-    <div className="App">
-     <h1>Lendo</h1>
+    <div className="container">
+      <div>
+        <SideBar />
+      </div>
+      <div className="body">
+        <div>
+          <Header />
+        </div>
+        <div>
+          <Content />
+        </div>
+      </div>
     </div>
   );
 }
