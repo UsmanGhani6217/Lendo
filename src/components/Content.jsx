@@ -1,4 +1,5 @@
 import React from 'react'
+import Bottom from "./Bottom";
 import {EChartComponent} from './Chart';
 import {BarOptions, PieOptions} from '../utils/constant'
 const Content = () => {
@@ -49,6 +50,9 @@ const Content = () => {
                     <p>Excepted Risk Score Distribution</p>
                         <EChartComponent options={PieOptions} style={{ height: 230, padding:10 }}/>
                 </div>
+            </div>
+            <div style={{margin:"20px"}}>
+                <Bottom />
             </div>
         </div>
     )
